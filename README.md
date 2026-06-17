@@ -1,14 +1,14 @@
-📊 ** Project 1: Zero-Shot & Few-Shot Data Extraction **
+# 📊 Project 1: Zero-Shot & Few-Shot Data Extraction
 
-Batch: 2026 | Powered by: DecodeLabs
+**Batch:** 2026 | **Powered by:** DecodeLabs
 
 ---
 
-📌 Project Overview
+# 📌 Project Overview
 
 This project demonstrates deterministic data extraction from unstructured customer support emails using Large Language Models (LLMs). The goal is to transform chaotic, messy text into clean, structured JSON with absolute precision – without hallucinations or conversational filler.
 
-🎯 Key Objectives
+# 🎯 Key Objectives
 
 · Extract exactly 5 variables from raw email text
 · Enforce strict JSON output (no extra text)
@@ -19,7 +19,7 @@ This project demonstrates deterministic data extraction from unstructured custom
 
 ---
 
-🧩 The Five Variables
+# 🧩 The Five Variables
 
 Field Type Description
 customer_name String Full name of the customer
@@ -30,7 +30,7 @@ contact_phone String or null Phone number; null if not provided
 
 ---
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 Component Technology
 IDE VS Code
@@ -41,7 +41,7 @@ Environment .env for API keys (Groq)
 
 ---
 
-📁 Project Structure
+# 📁 Project Structure
 
 ```
 email_extractor/
@@ -55,7 +55,7 @@ email_extractor/
 └── README.md               # This file
 ```
 
-🚀 How to Run the Project
+# 🚀 How to Run the Project
 
 Using Ollama (Fully Local – No API Key)
 
@@ -87,7 +87,7 @@ python extract_local.py
 
 ---
 
-📝 Core Extraction Prompt
+# 📝 Core Extraction Prompt
 
 The prompt uses strict delimiters ("""), Few-Shot examples, and a clear instruction set:
 
@@ -109,7 +109,7 @@ Now extract from this email (delimiter is """):
 
 ---
 
-🧪 Gatekeeper Test (The One That Matters)
+# 🧪 Gatekeeper Test (The One That Matters)
 
 Your pipeline must pass this test email, which intentionally omits the phone number:
 
@@ -117,13 +117,13 @@ Your pipeline must pass this test email, which intentionally omits the phone num
 Hi, my name is Sarah Johnson. My order #ORD-9999 was charged twice on my credit card. It's not super urgent but please fix it.
 ```
 
-✅ Expected Output (Pass)
+# ✅ Expected Output (Pass)
 
 ```json
 {"customer_name":"Sarah Johnson","order_number":"ORD-9999","complaint_type":"billing","severity_level":3,"contact_phone":null}
 ```
 
-📊 Success Criteria
+# 📊 Success Criteria
 
 Criteria Status
 Output is only valid JSON ✅
@@ -136,7 +136,7 @@ Delimiters used properly ✅
 
 ---
 
-🧠 Key Learnings
+# 🧠 Key Learnings
 
 · Few-shot > Zero-shot: Providing 2-3 perfect examples pushes accuracy from ~60% to >99%
 · Temperature = 0 makes outputs deterministic
@@ -146,7 +146,7 @@ Delimiters used properly ✅
 
 ---
 
-📚 References
+# 📚 References
 
 · DecodeLabs Prompt Engineering PDF
 · Groq API Documentation
@@ -155,13 +155,13 @@ Delimiters used properly ✅
 
 ---
 
-🙌 Acknowledgements
+3 🙌 Acknowledgements
 
 DecodeLabs – Industrial Training Kit, Batch 2026
 
 ---
 
-📬 Contact
+#📬 Contact
 
 · Email: decodelabs.tech@gmail.com
 · Location: Greater Lucknow, India
@@ -169,7 +169,7 @@ DecodeLabs – Industrial Training Kit, Batch 2026
 
 ---
 
-📝 License
+# 📝 License
 
 This project is for educational purposes as part of the DecodeLabs Industrial Training Program.
 
@@ -178,4 +178,4 @@ This project is for educational purposes as part of the DecodeLabs Industrial Tr
 Happy Prompt Engineering! 🚀
 ---
 
-🚀 How to Run the Project
+

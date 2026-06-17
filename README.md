@@ -1,4 +1,4 @@
-📊 Project 1: Zero-Shot & Few-Shot Data Extraction
+📊 ** Project 1: Zero-Shot & Few-Shot Data Extraction **
 
 Batch: 2026 | Powered by: DecodeLabs
 
